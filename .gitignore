@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Internal subagent scratch & logs
+.agents/
+temp/
+
+# Workspace execution artifacts & logs (preserve structure via .gitkeep)
+workspace/intermediate/*
+workspace/artifacts/*
+workspace/reports/*
+workspace/logs/*
+workspace/checkpoints/*
+workspace/generated/*
+!workspace/**/.gitkeep
+
+# Data directories (preserve folder structure via .gitkeep, exclude heavy datasets)
+data/input/*
+data/test_fixtures/*
+data/samples/*
+!data/**/.gitkeep

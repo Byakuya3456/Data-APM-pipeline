@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "D:\\project-data"
+      ]
+    },
+    "command": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "command_mcp_server.py"
+      ],
+      "env": {
+        "PROJECT_ROOT": "D:\\project-data",
+        "MAX_SCRIPT_SECONDS": "3600"
+      }
+    }
+  }
+}
