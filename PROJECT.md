@@ -92,8 +92,8 @@ DELIVERY ARTIFACTS (workspace/artifacts/ & deployment/)
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | E2E | E2E Testing Track | Requirement-driven test suite (Tiers 1-4, 10 synthetic datasets, `TEST_INFRA.md`, `TEST_READY.md`) | none | IN_PROGRESS |
-| M1 | Foundation & MCP Infrastructure | `pyproject.toml`, `config/settings.py`, `config/logging_config.py`, `mcp/filesystem_server.py`, `mcp/command_server.py`, `mcp/client.py`, `mcp/executor.py`, `tests/test_mcp.py` | none | IN_PROGRESS |
-| M2 | Data Intelligence & Engine | `engine/resource_monitor.py`, `engine/data_profiler.py`, `engine/polars_engine.py`, `engine/duckdb_engine.py`, `engine/memory_manager.py`, `engine/artifact_manager.py`, `tests/test_profiler.py`, `tests/test_resource_limits.py` | M1 | PLANNED |
+| M1 | Foundation & MCP Infrastructure | `pyproject.toml`, `config/settings.py`, `config/logging_config.py`, `mcp/filesystem_server.py`, `mcp/command_server.py`, `mcp/client.py`, `mcp/executor.py`, `tests/test_mcp.py` | none | DONE |
+| M2 | Data Intelligence & Engine | `engine/resource_monitor.py`, `engine/data_profiler.py`, `engine/polars_engine.py`, `engine/duckdb_engine.py`, `engine/memory_manager.py`, `engine/artifact_manager.py`, `tests/test_profiler.py`, `tests/test_resource_limits.py` | M1 | IN_PROGRESS |
 | M3 | Supervisor & LangGraph Orchestration | `agents/supervisor.py`, `orchestration/state.py`, `orchestration/routing.py`, `orchestration/checkpoint.py`, `orchestration/graph.py` | M1, M2 | PLANNED |
 | M4 | 7 Specialized Workers & Templates | `templates/`, `agents/cleaner_agent.py`, `agents/feature_agent.py`, `agents/validator_agent.py`, `agents/model_selector_agent.py`, `agents/trainer_agent.py`, `agents/evaluator_agent.py`, `agents/deployment_agent.py` | M1, M2, M3 | PLANNED |
 | M5 | Autonomous Repair, Delivery & CLI | `engine/error_classifier.py`, `deployment/`, `main.py` with 6 interactive menu options, `tests/test_pipeline.py` | M1, M2, M3, M4 | PLANNED |
